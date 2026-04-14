@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 60px;
+  line-height: 1.6;
+  background-color: #025959;
+}
+
+.nav {
+  position: fixed;       
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1D7373;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.nav a:hover {
+  color: #000;  
+}
+
+.container-1 {
+  position: relative;  
+  margin-top: 140px;
+  background-color: #f1f5f9;
+  padding: 40px;
+  text-align: center;
+  height: 150px;
+}
+
+.minha-foto {
+  position: absolute;   
+  top: 150px;           
+  left: 50%;            
+  transform: translateX(-50%); 
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+h1 {
+  font-family: 'WindSong', cursive;
+  font-size: 3.5rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+ p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.sobre {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sobre .branca {
+  flex: 1;               
+  background-color: #fff;
+  color: #000;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  height: 100vh;
+}
+
+.sobre .branca .sobre-dani {
+  width: 150px;        
+  height: 150px;       
+  border-radius: 50%;  
+  object-fit: cover;   
+  border: 4px solid #025959; 
+  margin: 0 auto 0px; 
+  display: block;
+}
+.sobre-dani {
+    margin-top: 5px;
+}
+.sobre .colorida {
+  flex: 2.5;               
+  background-color: #025959;
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  height: 100vh;
+}
+
+h4{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+#p2{
+    font-size: 1.2rem;
+    color:#000;
+}
+#p3{
+    text-align: justify;
+    line-height: 70px;
+}
+
+.footer {
+  background-color: #025959; 
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer .redes-sociais {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer .redes-sociais a {
+  color: #fff;          
+  font-size: 1.5rem;    
+  transition: all 0.3s ease;
+}
+
+.footer .redes-sociais a:hover {
+  color: #A62B1F;       
+}
+
+/* Projetos */
+#projetos h2{
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.grid-projetos {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.projeto {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+.projeto p {
+  font-size: 1rem;        
+  color: #333;            
+  line-height: 1.5;       
+  text-align: left;    
+  margin-top: 20px;       
+}
+
+.projeto a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #025959;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.projeto a:hover {
+  background-color: #A62B1F;
+  color: #000;
+}
+
+/* Contato */
+#contato {
+  padding: 40px;
+  text-align: left;
+  color: #fff;
+}
+#contato h2 {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+}
+#contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contato input, #contato textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#contato button {
+  padding: 10px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Tema claro */
+body.claro {
+  background-color: #f1f5f9;
+  color: #000;
+}
+
+body.claro .nav a {
+  color: #000;
+}
+
+body.claro .nav{
+  background-color: #e2e8f0;
+}
+
+body.claro .sobre .colorida{
+  background-color: #ffff;
+  color: #fff;
+}
+
+body.claro h1 {
+  color: #000;
+}
+
+body.claro p {
+  color: #000;
+}
+
+body.claro h4 {
+  color: #000;
+}
+
+body.claro .projeto {
+  background: #e2e8f0;
+}
+
+body.claro #contato h2 {
+  color: #000;
+}
+
+body.claro #contato {
+  color: #000;
+}
+
+body.claro .footer {
+  background-color: #e2e8f0;
+  color: #000;
+}
+
+#temaBtn {
+  background-color: transparent;
+  border: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  body {
+    padding-top: 150px; 
+  }
+
+  .nav a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .minha-foto {
+    width: 120px;
+    top: 120px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .minha-foto {
+    width: 100px;
+    top: 100px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre {
+    flex-direction: column;
+  }
+
+  .sobre .branca,
+  .sobre .colorida {
+    height: auto;
+    margin-top: 0;
+    padding: 20px;
+  }
+
+  .sobre .branca .sobre-dani {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  #p2, #p3 {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre .branca .sobre-dani {
+    width: 100px;
+    height: 100px;
+  }
+
+  #p2, #p3 {
+    font-size: 0.9rem;
+  }
+}
+
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 20px auto 50px;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .grid-projetos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  #contato form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer .redes-sociais a {
+    font-size: 1.2rem;
+  }
+}
+
+
+
